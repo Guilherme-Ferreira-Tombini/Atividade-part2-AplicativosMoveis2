@@ -3,12 +3,12 @@
     "short_name": "Truco Mania",
     "icons":[
            {
-            "src": "image/image.png",
+            "src": "./images/image.png",
             "sizes": "256x256",
             "type": "image/png"
            },
            {
-            "src": "image/image2.png",
+            "src": "./images/image2.png",
             "sizes": "512x512",
             "type": "image/png"
            }
