@@ -1,19 +1,136 @@
-body{
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+
+*{
+
+margin: 0;
+padding: 0;
+
+}
+
+body {
+    font-family: 'Padauk', sans-serif;
+    background-color: #000000;
 }
 
 html, .fullscreen {
-display: flex;
-height: 100%;
-margin: 0;
-padding: 0;
-width: 100%;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
 }
 
-.container{
-    margin: auto;
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 
-.title{
-    font-size: 3rem;
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color:yellow;
+    font-size: 30px;
+}
+
+.card{
+    background-color: #E8DF0D;
+    margin: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card4{
+    background-color: #C8BB46;
+    margin: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.card2{
+    background-color: #E8DF0D;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 35px;
+    padding: 70px;
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.card3{
+    background-color: #C8BB46;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 35px;
+    padding: 70px;
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enviar{
+    background-color: #000000;
+    padding:10px;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    border: #000000;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.enviar:hover{
+    background-color: #2d810c;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.limpar{
+    background-color: #000000;
+    padding:10px;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    border: #000000;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.limpar:hover{
+    background-color: #970d0d;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
 }

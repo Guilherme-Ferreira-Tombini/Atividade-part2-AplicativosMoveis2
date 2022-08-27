@@ -7,13 +7,62 @@
     <link rel="manifest" href="/manifest.json"/>
     <link rel="apple-touch-icon" href="images/images.jpg"/>
     <meta name="theme-color" content="white"/>
-    <title>Minha primeira PWA</title>
+    <title>Truco Mania</title>
 </head>
 <body class="fullscreen">
   <div class="container">
-    <h1 class="title">Minha primeira PWA</h1>
-  </div>
+  <header>
+    <h1>Truco Mania</h1>
+  </header>
+  <main>
 
+   <div class="flex">
+    <div class="card2">
+      <h4 id="texto"></h4>
+      <div class="resul1">-</div>
+    </div>
+    <div class="card3">
+      <h4 id="texto2"></h4>
+      <div class="resul2">-</div>
+    </div>
+   </div>
+   <div class="flex2">
+    <div class="card">
+      <h3>Nome da equipe:</h3>
+      <input type="text" id="equipe1" style="border-radius: 5px; font-size: 20px;">
+      <div class="botoes">
+      <button class="enviar" onclick="nome1()">Enviar</button>
+      <button class="limpar" onclick="limpar()">Limpar</button>
+    </div>
+
+<div class="botoes">
+  <button class="enviar" onclick="ponto1()">+1</button>
+  <button class="enviar" onclick="ponto3()">+3</button>
+  <button class="enviar" onclick="ponto6()">+6</button>
+  <button class="enviar" onclick="ponto12()">+12</button>
+</div>
+
+    </div>
+    <div class="card4">
+      <h3>Nome da equipe:</h3>
+      <input type="text" id="equipe2" style="border-radius: 5px; font-size: 20px">
+      <div class="botoes">
+      <button class="enviar" onclick="nome2()">Enviar</button>
+      <button class="limpar" onclick="limpar2()">Limpar</button>
+    </div>
+
+    <div class="botoes">
+      <button class="enviar" onclick="ponto1_2()">+1</button>
+      <button class="enviar" onclick="ponto3_2()">+3</button>
+      <button class="enviar" onclick="ponto6_2()">+6</button>
+      <button class="enviar" onclick="ponto12_2()">+12</button>
+    </div>
+
+    </div>
+    </div>
+   </div>
+  </main>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>
