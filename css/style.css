@@ -134,3 +134,7 @@ header{
     flex-wrap: wrap;
     margin: 10px;
 }
+
+#texto, #texto2{
+font-size: 20px;
+}
