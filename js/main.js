@@ -132,10 +132,10 @@ function vitoria_equi(){
     let vitoria2 = document.getElementById("vitorias2");
     
     
-    if(parseInt(pontos.textContent) >= 12){
+    if(parseInt(pontos.textContent) == 12){
         vitoria1.textContent++;
         document.getElementById("v_equipe").innerHTML = "Parabens equipe " + nome + " !!";
-    }else if(parseInt(pontos2.textContent) >= 12){
+    }else if(parseInt(pontos2.textContent) == 12){
         vitoria2.textContent++;
         document.getElementById("v_equipe2").innerHTML = "Parabens equipe " + nome2 + " !!";
     }
