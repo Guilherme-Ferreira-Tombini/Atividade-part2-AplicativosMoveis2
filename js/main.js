@@ -53,7 +53,7 @@ function limpar2(){
     let texto =  document.getElementById("texto2");
     let pontos = document.getElementById("resul2");
     let vitoria = document.getElementById("vitorias2");
-    let text = document.getElementById("v_equipe");
+    let text = document.getElementById("v_equipe2");
     nome.value = "";
     texto.innerHTML = "";
     pontos.textContent = 0;
