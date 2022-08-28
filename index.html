@@ -9,7 +9,7 @@
     <meta name="theme-color" content="white"/>
     <title>Truco Mania</title>
 </head>
-<body class="fullscreen">
+<body class="fullscreen" onload="vitoria_aqui()">
   <div class="container">
   <header>
     <h1>Truco Mania</h1>
@@ -20,12 +20,12 @@
     <div class="card2">
       <h4 id="texto"></h4>
       <span id="resul1" class="resul1">0</span>
-      <span id="vitorias1"></span>
+      <span class="vit"><span>Vitorias: </span><span id="vitorias1">0</span></span>
     </div>
     <div class="card3">
       <h4 id="texto2"></h4>
       <span id="resul2" class="resul2">0</span>
-      <span id="vitorias2"></span>
+      <span class="vit"><span>Vitorias: </span><span id="vitorias2">0</span></span>
     </div>
    </div>
    <div class="flex2">
@@ -34,7 +34,8 @@
       <input type="text" id="equipe1" style="border-radius: 5px; font-size: 20px;">
       <div class="botoes">
       <button class="enviar" onclick="nome1()">Enviar</button>
-      <button class="limpar" onclick="limpar()">Limpar</button>
+      <button class="limpar" onclick="limpar()">Limpar tudo</button>
+      <button class="limpar" onclick="limpar_1()">Limpar placar</button>
     </div>
 
 <div class="botoes">
@@ -43,23 +44,24 @@
   <button id="6" class="enviar">+6</button>
   <button id="12" class="enviar">+12</button>
 </div>
-
+<h1 id="v_equipe"></h1>
     </div>
     <div class="card4">
       <h3>Nome da equipe:</h3>
       <input type="text" id="equipe2" style="border-radius: 5px; font-size: 20px">
       <div class="botoes">
       <button class="enviar" onclick="nome2()">Enviar</button>
-      <button class="limpar" onclick="limpar2()">Limpar</button>
+      <button class="limpar" onclick="limpar2()">Limpar tudo</button>
+      <button class="limpar" onclick="limpar_2()">Limpar placar</button>
     </div>
 
     <div class="botoes">
-      <button class="enviar">+1</button>
-      <button class="enviar">+3</button>
-      <button class="enviar">+6</button>
-      <button class="enviar">+12</button>
+      <button id="btn1" class="enviar">+1</button>
+      <button id="btn2" class="enviar">+3</button>
+      <button id="btn3" class="enviar">+6</button>
+      <button id="btn4" class="enviar">+12</button>
     </div>
-
+    <h1 id="v_equipe2"></h1>
     </div>
     </div>
    </div>
