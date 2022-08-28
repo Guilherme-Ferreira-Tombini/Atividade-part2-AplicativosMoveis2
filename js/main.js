@@ -80,48 +80,64 @@ function limpar_2(){
 btn.onclick = function () {
     let adiciona = parseInt(pontos.textContent) + 1;
     pontos.textContent = adiciona;
+    document.getElementById("v_equipe").innerHTML = "";
+    document.getElementById("v_equipe2").innerHTML = "";
     vitoria_equi();
 }
 
 btn2.onclick = function () {
     let adiciona = parseInt(pontos.textContent) + 3;
     pontos.textContent = adiciona;
+    document.getElementById("v_equipe").innerHTML = "";
+    document.getElementById("v_equipe2").innerHTML = "";
     vitoria_equi();
 }
 
 btn3.onclick = function () {
     let adiciona = parseInt(pontos.textContent) + 6;
     pontos.textContent = adiciona;
+    document.getElementById("v_equipe").innerHTML = "";
+    document.getElementById("v_equipe2").innerHTML = "";
     vitoria_equi();
 }
 
 btn4.onclick = function () {
     let adiciona = parseInt(pontos.textContent) + 12;
     pontos.textContent = adiciona;
+    document.getElementById("v_equipe").innerHTML = "";
+    document.getElementById("v_equipe2").innerHTML = "";
     vitoria_equi();
 }
 
 btn5.onclick = function () {
     let adiciona = parseInt(pontos2.textContent) + 1;
     pontos2.textContent = adiciona;
+    document.getElementById("v_equipe2").innerHTML = "";
+    document.getElementById("v_equipe").innerHTML = "";
     vitoria_equi();
 }
 
 btn6.onclick = function () {
     let adiciona = parseInt(pontos2.textContent) + 3;
     pontos2.textContent = adiciona;
+    document.getElementById("v_equipe2").innerHTML = "";
+    document.getElementById("v_equipe").innerHTML = "";
     vitoria_equi();
 }
 
 btn7.onclick = function () {
     let adiciona = parseInt(pontos2.textContent) + 6;
     pontos2.textContent = adiciona;
+    document.getElementById("v_equipe2").innerHTML = "";
+    document.getElementById("v_equipe").innerHTML = "";
     vitoria_equi();
 }
 
 btn8.onclick = function () {
     let adiciona = parseInt(pontos2.textContent) + 12;
     pontos2.textContent = adiciona;
+    document.getElementById("v_equipe2").innerHTML = "";
+    document.getElementById("v_equipe").innerHTML = "";
     vitoria_equi();
 }
 
@@ -130,14 +146,20 @@ function vitoria_equi(){
     let nome2 = document.getElementById("equipe2").value;
     let vitoria1 = document.getElementById("vitorias1");
     let vitoria2 = document.getElementById("vitorias2");
-    
-    
+    let pontos = document.getElementById("resul1");
+    let pontos2 = document.getElementById("resul2");
+
     if(parseInt(pontos.textContent) >= 12){
         vitoria1.textContent++;
         document.getElementById("v_equipe").innerHTML = "Parabens equipe " + nome + " !!";
+        pontos.textContent = 0;
+        pontos2.textContent = 0;
+
     }else if(parseInt(pontos2.textContent) >= 12){
         vitoria2.textContent++;
         document.getElementById("v_equipe2").innerHTML = "Parabens equipe " + nome2 + " !!";
+        pontos2.textContent = 0;
+        pontos.textContent = 0;
+
     }
 }
-
